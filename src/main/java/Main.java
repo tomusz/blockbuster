@@ -1,5 +1,3 @@
-import com.google.gson.Gson;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
@@ -33,14 +31,9 @@ public class Main {
         Reader allMoviesReader = Files.newBufferedReader(Paths.get("src/main/resources/filmsData.json"));
 
 
+        MovieLibrary classFromJSON = MovieLibraryFileHandler.getMovieLibraryFromJSON("src/main/resources/filmsData.json");
+        System.out.println(classFromJSON);
+        MovieLibraryFileHandler.saveLibraryToJSON("src/main/resources/newFilmsData.json",classFromJSON);
 
-        FileHandler.getClassFromJSON("src/main/resources/filmsData.json",MovieLibrary.class);
-
-        Gson gson = new Gson();
-
-//        MovieLibrary movies = gson.fromJson(allMoviesReader, MovieLibrary.class);
-//        System.out.println(movies.toString());
-//        String json = gson.toJson(movies);
-//        System.out.println(movie.toString());
     }
 }

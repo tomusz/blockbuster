@@ -6,29 +6,29 @@ import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class FileHandler {
+public class MovieLibraryFileHandler {
 
     private static Gson gson = new Gson();
 
-    public static <T> T getClassFromJSON(String path, Class<T> targetType) throws IOException {
-        Class object;
+    public static MovieLibrary getMovieLibraryFromJSON(String path) throws IOException {
+        MovieLibrary movieLibrary;
         Reader reader = null;
         try {
             reader = Files.newBufferedReader(Paths.get(path));
-            object = gson.fromJson(reader, targetType.getClass());
+            movieLibrary = gson.fromJson(reader, MovieLibrary.class);
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
             reader.close();
         }
-        return (T) object;
+        return movieLibrary;
     }
 
-    public static <T> void saveClassToJSON(String path, Class<T> targetClass) throws IOException {
+    public static void saveLibraryToJSON(String path, MovieLibrary movieLibrary) throws IOException {
         Writer writer = null;
         try {
             writer = Files.newBufferedWriter(Paths.get(path));
-            gson.toJson(targetClass, writer);
+            gson.toJson(movieLibrary, writer);
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
