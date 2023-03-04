@@ -1,0 +1,136 @@
+{
+  "movies": [
+    {
+      "title": "First Film",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f3",
+      "releaseDate": 2012,
+      "genre": "drama",
+      "director": {
+        "firstName": "Quentin",
+        "lastName": "Tarantino"
+      },
+      "cast": [
+        {
+          "firstName": "John",
+          "lastName": "Kowalski"
+        },
+        {
+          "firstName": "Anna",
+          "lastName": "Niewiadomska"
+        },
+        {
+          "firstName": "Aamir",
+          "lastName": "Khan"
+        },
+        {
+          "firstName": "Takeshi",
+          "lastName": "Kitano"
+        }
+      ]
+    },
+    {
+      "title": "Mulan",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f4",
+      "releaseDate": 2000,
+      "genre": "comedy",
+      "director": {
+        "firstName": "Agnieszka",
+        "lastName": "Holland"
+      },
+      "cast": [
+        {
+          "firstName": "Anna",
+          "lastName": "Niewiadomska"
+        },
+        {
+          "firstName": "Rebel",
+          "lastName": "Wilson"
+        }
+      ]
+    },
+    {
+      "title": "Tenet",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f5",
+      "releaseDate": 1980,
+      "genre": "horror",
+      "director": {
+        "firstName": "Steven",
+        "lastName": "Spilberg"
+      },
+      "cast": [
+        {
+          "firstName": "Aamir",
+          "lastName": "Khan"
+        },
+        {
+          "firstName": "Priyanka",
+          "lastName": "Jonas"
+        }
+      ]
+    },
+    {
+      "title": "Diuna",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f6",
+      "releaseDate": 2022,
+      "genre": "science fiction",
+      "director": {
+        "firstName": "Alfred",
+        "lastName": "Hitchcock"
+      },
+      "cast": [
+        {
+          "firstName": "John",
+          "lastName": "Kowalski"
+        },
+        {
+          "firstName": "Charles",
+          "lastName": "Chaplin"
+        }
+      ]
+    },
+    {
+      "title": "Alien",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f7",
+      "releaseDate": 2003,
+      "genre": "science fiction",
+      "director": {
+        "firstName": "Charles",
+        "lastName": "Chaplin"
+      },
+      "cast": [
+        {
+          "firstName": "Charles",
+          "lastName": "Chaplin"
+        },
+        {
+          "firstName": "Anna",
+          "lastName": "Niewiadomska"
+        },
+        {
+          "firstName": "Takeshi",
+          "lastName": "Kitano"
+        }
+      ]
+    },
+    {
+      "title": "Everything Everywhere All at Once",
+      "id": "e58ed763-928c-4155-bee9-fdbaaadc15f8",
+      "releaseDate": 2023,
+      "genre": "action",
+      "director": {
+        "firstName": "Dan",
+        "lastName": "Kwan"
+      },
+      "cast": [
+        {
+          "firstName": "Michelle",
+          "lastName": "Yeoh"
+        },
+        {
+          "firstName": "Stephanie",
+          "lastName": "Hsu"
+        }
+      ]
+    }
+  ]
+}
